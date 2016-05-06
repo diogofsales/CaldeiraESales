@@ -29,7 +29,6 @@ class Usuario {
         $this->Login = $usuario["Login"];
         $this->Senha = $usuario["Senha"];
         $this->Bloqueado = $usuario["Bloqueado"];
-        //$this->DataCadastro = $usuario["DataCadastro"];
         $this->DataCadastro = date("d/m/Y", strtotime(str_replace('-', '/', $usuario["DataCadastro"])));   
     }
 

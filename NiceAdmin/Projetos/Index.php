@@ -3,7 +3,7 @@ include("../../DataBase.php");
 $db = new DataBase();
 $db->Connect();
 
-$projetos = $db->ExecuteQuery("select Id, Nome, Descricao, DataInicio, DataFim from projetos");
+$projetos = $db->ExecuteQuery("select Id, Nome, Descricao, DATE_FORMAT(DataInicio, '%d/%m/%Y') as DataInicio, DATE_FORMAT(DataFim, '%d/%m/%Y') as DataFim from projetos");
 ?>
 <!DOCTYPE html>
 <html lang="en">

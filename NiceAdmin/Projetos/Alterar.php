@@ -6,6 +6,7 @@ $projeto = new Projeto();
 
 $projeto->Nome = $_POST["Nome"];
 $projeto->Descricao = $_POST["Descricao"];
+$projeto->DataInicio = $_POST["DataInicio"];
 
 if (isset($_GET["Id"])){
     $projeto->Id = $_GET["Id"];

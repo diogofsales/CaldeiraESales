@@ -425,6 +425,20 @@ if ($alterar) {
                                                 </div>
                                             </div>
                                             
+                                            <div class="form-group ">
+                                                <label for="ccomment" class="control-label col-lg-2">Data de Inicio</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control " id="DataInicio" name="DataInicio" type="Text" value="<?php if ($alterar){ echo $projeto->DataInicio;} ?>"/>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group ">
+                                                <label for="ccomment" class="control-label col-lg-2">Data de Fim</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control " id="DataFim" name="DataFim" type="Text" value="<?php if ($alterar){ echo $projeto->DataFim;} ?>"/>
+                                                </div>
+                                            </div>
+                                            
                                             <div class="form-group">
                                                 <div class="col-lg-offset-2 col-lg-10">
                                                     <button class="btn btn-primary" type="submit">Salvar</button>
